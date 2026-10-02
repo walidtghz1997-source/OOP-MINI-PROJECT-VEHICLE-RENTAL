@@ -12,7 +12,7 @@ let btnRent = document.querySelector("#btnRent")
 let inputDays = document.querySelector("#daysInput")
 let inputSearch = document.querySelector("#searchInput")
 let vehicleCount = document.querySelector(".vehicleCount")
-// let  = document.querySelector("#")
+let boxCardsVehicle = document.querySelector(".boxCardsVehicle")
 // let  = document.querySelector("#")
 // let  = document.querySelector("#")
 
@@ -114,3 +114,50 @@ class Bicycle extends Vehicle {
     }
 };
 
+function addVehicle() {
+    let
+
+}
+
+function displayeCards() {
+    arrayCards.forEach(card => {
+        card.boxCardsVehicle.innerHTML = `
+   <div class="vehiclesContainer">
+   <div class="cardVehicle">
+                        <div class="cardBadgeRow">
+                            <span class="badgeStatus available"><span class="greenDot"></span> Available</span>
+                            </div>
+                        <div class="cardImgBox carBg">
+                            <span class="watermark">ROAM COLLECTION</span>
+                        </div>
+                        <div class="cardDetails">
+                            <span class="vType">${inputSelect.value}</span>
+                            <h3 class="vName">${inputName.value}</h3>
+                            <div class="vPriceBox">
+                                <span class="vPrice">${inputPrice.value}</span>
+                                <span class="vUnit">MAD / day</span>
+                            </div>
+                        </div>
+                        <div class="cardFooter">
+                            <div class="estimateRow">
+                                <div class="daysInputBox">
+                                    <label>Rental days</label>
+                                    <input type="number" value="1" min="1" id="daysInput" class="daysInput">
+                                    </div>
+                                    <button class="btnEstimate" id="btnEstimate">Estimate &rarr;</button>
+                                    </div>
+                                    <button class="btnRent" id="btnRent"><i class="fa-solid fa-key"></i> Rent vehicle</button>
+                                    </div>
+                                    `
+    });
+
+
+
+    btnAddCars.addEventListener("click", function () {
+        if
+                                    let vehicle = new
+                arrayCards.push()
+
+    })
+}
+console.log(arrayCards);
