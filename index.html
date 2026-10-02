@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raom</title>
+    <link rel="stylesheet" href="css/app.css">
+    <script src="https://kit.fontawesome.com/50950c4c6a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navBar">
+            <div class="boxLogo">
+                <span id="logo">raom</span>
+            </div>
+            <div class="navBarS">
+                <span><a href="" class="fleet">Your fleet</a></span>
+                <span><a href="#form" class="vehicle">Add a vehicle</a></span>
+            </div>
+            <div class="navBarStodio">
+                <span class="noqta"></span>
+                <span class="studio">Your rental studio</span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="heroSection">
+            <div class="boxHeroSection">
+                <div class="boxHeroRight">
+                    <span class="para1">LESS ADMIN. MORE ADVENTURE.</span>
+                    <span class="para">A good ride.</span>
+                    <span class="para">A better day.</span>
+                    <span class="para2">Keep your fleet moving one journey at a time.</span>
+                </div>
+                <div class="boxHeroLeft">
+                    <span class="para3">THE EVERYDAY ESCAPE</span>
+                </div>
+            </div>
+        </section>
+        <div class="boxNumberTotal">
+            <div class="totalVehicle">
+                <div class="boxIcon">
+                    <div class="iconTotal"><i class="fa-solid fa-grip"></i></div>
+                    <div>
+                        <p class="paratotal">Total Vehicle</p>
+                        <span class="numberTotal" id="numberTotal">0</span>
+                    </div>
+                </div>
+                <div>
+                    <p class="paratotal">Your collection</p>
+                </div>
+            </div>
+            <div class="totalVehicle">
+                <div class="boxIcon">
+                    <div class="iconTotal"><i class="fa-solid fa-check-double"></i></div>
+                    <div>
+                        <p class="paratotal">Ready To go</p>
+                        <span class="numberTotal" id="numTotalTogo">0</span>
+                    </div>
+                </div>
+                <div class="boxAvailabele">
+                    <span class="noqta"></span>
+                    <p class="paratotal">Available now</p>
+                </div>
+            </div>
+            <div class="totalVehicle">
+                <div class="boxIcon">
+                    <div class="iconTotal"><i class="fa-solid fa-grip"></i></div>
+                    <div>
+                        <p class="paratotal">Out Exploring</p>
+                        <span class="numberTotal" id="numTotalOut">0</span>
+                    </div>
+                </div>
+                <div>
+                    <p class="paratotal">Currently rented</p>
+                </div>
+            </div>
+        </div>
+        <section class="sectionTwo">
+            <div class="sideBar">
+                <div class="grow">
+                    <div class="boxiconGrow">
+                        <span><i class="fa-solid fa-square-plus"></i></span>
+                        <span class="paragrow">Grow your fleet</span>
+                    </div>
+                    <p class="paratotal para">A new ride. A new possibility</p>
+                </div>
+                <form action="" id="form">
+                    <label for="inputName">Vehicle name</label>
+                    <input type="text" id="inputName">
+                    <label for="inputSelect">Vehicle type</label>
+                    <select id="inputSelect">
+                        <option value="car">Car</option>
+                        <option value="motorcycle">Motorcycle</option>
+                        <option value="van">Van</option>
+                    </select>
+                    <label for="inputPrice">Daily rental price</label>
+                    <input type="number" id="inputPrice">
+                    <button type="submit" id="btnAdd">Add vehicle</button>
+                </form>
+                <div class="boxfoterSideBar">
+                    <div class="foterSideBar">
+                        <span class="paraPicing">A little clarity on picing</span>
+                        <span>Cars include a 100 MAD rental fee. Motorcycles include </span>
+                        <span>30 MAD Bicycles have no Extra fee.</span>
+                    </div>
+                    <div class="boxLetsget">
+                        <span>Ready for the next chapter?</span>
+                        <span class="letget">Let's get moving. </span>
+                    </div>
+                </div>
+            </div>
+
+            <section class="vehiclesSection">
+                <div class="vehiclesHeader">
+                    <div>
+                        <span class="smallTitle">THE COLLECTION</span>
+                        <h2 class="fleetTitle">Your fleet <span class="vehicleCount">0</span></h2>
+                    </div>
+
+                    <div class="fleetControls">
+                        <div class="filterPills">
+                            <button class="pillBtn active">All rides</button>
+                            <button class="pillBtn">Cars</button>
+                            <button class="pillBtn">Motorcycle</button>
+                            <button class="pillBtn">Bicycles</button>
+                        </div>
+                        <div class="searchFilterGroup">
+                            <input type="text" placeholder="Find a vehicle..." class="searchInput" id="searchInput">
+                            <select class="statusSelect">
+                                <option value="any">Any status</option>
+                                <option value="available">Available</option>
+                                <option value="rented">On a journey</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+<!-- 
+                <div class="vehiclesContainer">
+                    <div class="cardVehicle">
+                        <div class="cardBadgeRow">
+                            <span class="badgeStatus available"><span class="greenDot"></span> Available</span>
+                        </div>
+                        <div class="cardImgBox carBg">
+                            <span class="watermark">ROAM COLLECTION</span>
+                        </div>
+                        <div class="cardDetails">
+                            <span class="vType">CAR</span>
+                            <h3 class="vName">Peugeot 208</h3>
+                            <div class="vPriceBox">
+                                <span class="vPrice">400</span>
+                                <span class="vUnit">MAD / day</span>
+                            </div>
+                        </div>
+                        <div class="cardFooter">
+                            <div class="estimateRow">
+                                <div class="daysInputBox">
+                                    <label>Rental days</label>
+                                    <input type="number" value="1" min="1" id="daysInput" class="daysInput">
+                                </div>
+                                <button class="btnEstimate" id="btnEstimate">Estimate &rarr;</button>
+                            </div>
+                            <button class="btnRent" id="btnRent"><i class="fa-solid fa-key"></i> Rent vehicle</button>
+                        </div>
+                    </div> -->
+<!-- 
+                    <div class="cardVehicle">
+                        <div class="cardBadgeRow">
+                            <span class="badgeStatus available"><span class="greenDot"></span> Available</span>
+                        </div>
+                        <div class="cardImgBox motoBg">
+                            <span class="watermark">ROAM COLLECTION</span>
+                        </div>
+                        <div class="cardDetails">
+                            <span class="vType">MOTORCYCLE</span>
+                            <h3 class="vName">Honda CB500</h3>
+                            <p class="vSubtext">Helmet included</p>
+                            <div class="vPriceBox">
+                                <span class="vPrice">250</span>
+                                <span class="vUnit">MAD / day</span>
+                            </div>
+                        </div>
+                        <div class="cardFooter">
+                            <div class="estimateRow">
+                                <div class="daysInputBox">
+                                    <label>Rental days</label>
+                                    <input type="number" value="1" min="1" class="daysInput">
+                                </div>
+                                <button class="btnEstimate">Estimate &rarr;</button>
+                            </div>
+                            <button class="btnRent"><i class="fa-solid fa-key"></i> Rent vehicle</button>
+                        </div>
+                    </div> -->
+
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footerLogo">
+            <span class="eLogo">E</span> Roam<span class="dot">.</span>
+        </div>
+        <div class="footerTagline">
+            Made for the everyday escapes.
+        </div>
+        <div class="footerLocation">
+            Al Hoceima, Morocco 🇲🇦
+        </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
